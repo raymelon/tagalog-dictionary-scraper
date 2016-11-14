@@ -1,10 +1,13 @@
-# Tagalog Scraper :ledger: 
+# Tagalog Scraper :ledger:  [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Check out Tagalog Scraper! Ating pag-ibayuhin ang ating talahuluganan. @github https://github.com/raymelon/open-with-cmd)
+
+>***Ating pag-ibayuhin ang ating talahuluganan!***
 
 Collects [Tagalog](http://tagaloglang.com/) words from [tagalog.pinoydictionary.com](http://tagalog.pinoydictionary.com/), a database of [Tagalog](http://tagaloglang.com/) words powered by Cyberspace.ph Web Hosting using web scraping and web crawling techniques.
 
 ![](https://reposs.herokuapp.com/?path=raymelon/tagalog-scraper)
 [![HitCount](https://hitt.herokuapp.com/raymelon/tagalog-scraper/hits.svg)](https://github.com/raymelon/tagalog-scraper)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)]()
 
 ## How it is done? :muscle:
 Each webpage is loaded and parsed, extracting the words enclosed in `<dt>` tag.
