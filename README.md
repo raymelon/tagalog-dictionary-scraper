@@ -1,5 +1,11 @@
-# Tagalog Scraper :ledger:
+# Tagalog Scraper :ledger: 
+
 Collects [Tagalog](http://tagaloglang.com/) words from [tagalog.pinoydictionary.com](http://tagalog.pinoydictionary.com/), a database of [Tagalog](http://tagaloglang.com/) words powered by Cyberspace.ph Web Hosting using web scraping and web crawling techniques.
+
+![](https://reposs.herokuapp.com/?path=raymelon/tagalog-scraper)
+[![HitCount](https://hitt.herokuapp.com/raymelon/tagalog-scraper/hits.svg)](https://github.com/raymelon/tagalog-scraper)
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+
 ## How it is done? :muscle:
 Each webpage is loaded and parsed, extracting the words enclosed in `<dt>` tag.
 
