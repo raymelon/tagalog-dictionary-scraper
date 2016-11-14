@@ -29,5 +29,5 @@ Originally it is intented for a [Scrabble ®](http://www.scrabble.com/) Tagalog 
 - `tagalog_dict.txt` is where the scraper [`collect_tagalog.py`](https://github.com/raymelon/tagalog-scraper/blob/master/collect_tagalog.py) puts the collected words.
 - The output file [`tagalog_dict.txt`](https://github.com/raymelon/tagalog-scraper/blob/master/tagalog_dict.txt) will be updated from time to time to ensure up-to-date collection. :date:
 
-## License
+## License [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
 [GNU General Public License 3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)
