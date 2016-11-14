@@ -9,7 +9,7 @@ Collects [Tagalog](http://tagaloglang.com/) words from [tagalog.pinoydictionary.
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)]()
 
-## How it is done? :muscle:
+## How is it done? :muscle:
 Each webpage is loaded and parsed, extracting the words enclosed in `<dt>` tag.
 
 Included is [`tagalog.pinoydictionary.com`](http://tagalog.pinoydictionary.com/) `html` [snippet](https://github.com/raymelon/tagalog-scraper/blob/master/tagalog.pinoydictionary.com%20html%20snippet.html) containing the source of
@@ -19,7 +19,7 @@ Included is [`tagalog.pinoydictionary.com`](http://tagalog.pinoydictionary.com/)
 I do not own the `html` code cited above, it is owned by [tagalog.pinoydictionary.com](http://tagalog.pinoydictionary.com/).
 
 ## How did the project started? :thought_balloon:
-Originally it is intented for a [Scrabble ®](http://www.scrabble.com/) Tagalog dictionary database, but other uses may vary.
+Originally it is intended for a [Scrabble ®](http://www.scrabble.com/) Tagalog dictionary database, but other uses may vary.
 
 ## Tools :pencil2:
 - [Python 3+](https://www.python.org/) :snake:
