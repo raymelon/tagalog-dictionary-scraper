@@ -4,6 +4,8 @@
 
 Collects [Tagalog](http://tagaloglang.com/) words from [tagalog.pinoydictionary.com](http://tagalog.pinoydictionary.com/), a database of [Tagalog](http://tagaloglang.com/) words powered by Cyberspace.ph Web Hosting using web scraping and web crawling techniques.
 
+**24,868 words (as of Oct 20, 2016)**
+
 ![](https://reposs.herokuapp.com/?path=raymelon/tagalog-dictionary-scraper)
 [![HitCount](https://hitt.herokuapp.com/raymelon/tagalog-dictionary-scraper/hits.svg)](https://github.com/raymelon/tagalog-dictionary-scraper)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
