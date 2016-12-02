@@ -7,9 +7,10 @@ Collects [Tagalog](http://tagaloglang.com/) words from [tagalog.pinoydictionary.
 **24,868 words (as of Oct 20, 2016)**
 
 ![](https://reposs.herokuapp.com/?path=raymelon/tagalog-dictionary-scraper)
-[![HitCount](https://hitt.herokuapp.com/raymelon/tagalog-dictionary-scraper/hits.svg)](https://github.com/raymelon/tagalog-dictionary-scraper)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+[![Build Status](https://travis-ci.org/raymelon/tagalog-dictionary-scraper.svg)](https://travis-ci.org/raymelon/tagalog-dictionary-scraper)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)]()
+[comment]: # ([![HitCount](https://hitt.herokuapp.com/raymelon/tagalog-dictionary-scraper/hits.svg)](https://github.com/raymelon/tagalog-dictionary-scraper))
 
 ## How is it done? :muscle:
 Each webpage is loaded and parsed, extracting the words enclosed in `<dt>` tag.
