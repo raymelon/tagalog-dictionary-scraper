@@ -4,4 +4,4 @@ python:
   - "3.5"
 
 install: pip install beautifulsoup4
-script: collect_tagalog.py
+script: collect_tagalog
