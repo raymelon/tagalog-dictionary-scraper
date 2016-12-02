@@ -36,7 +36,13 @@ with open('tagalog_dict.txt', 'a') as f:
     
 	# every iteration parses a new webpage
 	while True:
-		url = 'http://tagalog.pinoydictionary.com/list/' + letters[letter_index] + '/' + str(page_index) + '/'
+		# once the letter_index reaches 27, the alphabet traversal is done and we are done as well
+		try:
+			url = 'http://tagalog.pinoydictionary.com/list/' + letters[letter_index] + '/' + str(page_index) + '/'
+		except:
+			print('EXTRACTION DONE. See the extracted words at "tagalog_dict.txt"')
+			break
+			      
 		print('Extracting from', url) # prints url for user monitoring
         
         	# tries opening the page
