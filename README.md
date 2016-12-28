@@ -9,6 +9,7 @@ Collects [Tagalog](http://tagaloglang.com/) words from [tagalog.pinoydictionary.
 ![](https://reposs.herokuapp.com/?path=raymelon/tagalog-dictionary-scraper)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
 [![Build Status](https://travis-ci.org/raymelon/tagalog-dictionary-scraper.svg)](https://travis-ci.org/raymelon/tagalog-dictionary-scraper)
+[![codecov](https://codecov.io/gh/raymelon/tagalog-dictionary-scraper/branch/master/graph/badge.svg)](https://codecov.io/gh/raymelon/tagalog-dictionary-scraper)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)]()
 [comment]: # ([![HitCount](https://hitt.herokuapp.com/raymelon/tagalog-dictionary-scraper/hits.svg)](https://github.com/raymelon/tagalog-dictionary-scraper))
 
