@@ -1,12 +1,13 @@
 language: python
 python:
-  - "3.4"
   - "3.5"
 
 install: pip install beautifulsoup4
-install: pip install codecov
 script: python collect_tagalog.py
 
 after_success:
+  - pip install codecov
   - codecov
+  - pip install coverage
+  - coverage run tests.py
   - bash <(curl -s https://codecov.io/bash)
