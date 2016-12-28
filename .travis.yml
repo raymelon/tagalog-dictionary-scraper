@@ -7,7 +7,6 @@ install: pip install beautifulsoup4
 install: pip install codecov
 script: python collect_tagalog.py
 
-- python codecov
-
 after_success:
+  - codecov
   - bash <(curl -s https://codecov.io/bash)
