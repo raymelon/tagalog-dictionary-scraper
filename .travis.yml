@@ -5,3 +5,6 @@ python:
 
 install: pip install beautifulsoup4
 script: python collect_tagalog.py
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
