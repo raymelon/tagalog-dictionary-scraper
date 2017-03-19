@@ -1,4 +1,4 @@
-# Tagalog Dictionary Scraper :ledger:  [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Check out Tagalog Dictionary Scraper! Ating pag-ibayuhin ang ating talahuluganan. @github https://github.com/raymelon/tagalog-dictionary-scraper)
+# Tagalog Dictionary Scraper :ledger:  [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Check%20out%20Tagalog%20Dictionary%20Scraper!%20Ating%20pag-ibayuhin%20ang%20ating%20talahuluganan.%20%40github%20https://github.com/raymelon/tagalog-dictionary-scraper)
 
 >***Ating pag-ibayuhin ang ating talahuluganan!***
 
@@ -11,7 +11,6 @@ Collects [Tagalog](http://tagaloglang.com/) words from [tagalog.pinoydictionary.
 [![Build Status](https://travis-ci.org/raymelon/tagalog-dictionary-scraper.svg)](https://travis-ci.org/raymelon/tagalog-dictionary-scraper)
 [![codecov](https://codecov.io/gh/raymelon/tagalog-dictionary-scraper/branch/master/graph/badge.svg)](https://codecov.io/gh/raymelon/tagalog-dictionary-scraper)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)]()
-[comment]: # ([![HitCount](https://hitt.herokuapp.com/raymelon/tagalog-dictionary-scraper/hits.svg)](https://github.com/raymelon/tagalog-dictionary-scraper))
 
 ## How is it done? :muscle:
 Each webpage is loaded and parsed, extracting the words enclosed in `<dt>` tag.
