@@ -1,3 +1,4 @@
 uses:
  - bs4
- 
+python-targets:
+ - 3
