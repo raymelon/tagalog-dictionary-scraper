@@ -1,4 +1,4 @@
-uses:
- - bs4
+requirements:
+  - requirements.txt
 python-targets:
- - 3
+  - 3
