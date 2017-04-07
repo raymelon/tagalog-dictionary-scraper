@@ -1,5 +1,5 @@
 with open('tagalog_dict.txt', 'r') as dic:
-     words = dic.read().split('\n') 
+	words = dic.read().split('\n') 
      
 nodup = set()
 nodup_add = nodup.add
