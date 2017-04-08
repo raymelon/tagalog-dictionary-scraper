@@ -11,6 +11,7 @@ Collects [Tagalog](http://tagaloglang.com/) words from [tagalog.pinoydictionary.
 [![Build Status](https://travis-ci.org/raymelon/tagalog-dictionary-scraper.svg)](https://travis-ci.org/raymelon/tagalog-dictionary-scraper)
 [![Code Health](https://landscape.io/github/raymelon/tagalog-dictionary-scraper/master/landscape.svg?style=flat)](https://landscape.io/github/raymelon/tagalog-dictionary-scraper/master)
 [![codecov](https://codecov.io/gh/raymelon/tagalog-dictionary-scraper/branch/master/graph/badge.svg)](https://codecov.io/gh/raymelon/tagalog-dictionary-scraper)
+
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)]()
 
 ## How is it done? :muscle:
