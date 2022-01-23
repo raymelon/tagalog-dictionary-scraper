@@ -55,15 +55,15 @@ with open('tagalog_dict.txt', 'a') as f:
 			letter_index += 1
             
             		# new letter means new page index
-			page_index = 0
+			page_index = 1
 			continue
         
         	# parses the page opened
 		raw = BeautifulSoup(html, 'html.parser')
         
-       		# each word is enclosed in <dt> tags, 
+       		# each word is enclosed in <h2> tags, 
         	#   therefore it is the only tag we need
-		words = raw.findAll('dt')
+		words = raw.findAll('h2', class_='word-entry')
         
 		for word in words:
             		# only gets words up to 8 characters length and...
