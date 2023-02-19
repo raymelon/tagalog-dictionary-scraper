@@ -4,7 +4,7 @@
 
 Collects [Tagalog](http://tagaloglang.com/) words from [tagalog.pinoydictionary.com](http://tagalog.pinoydictionary.com/), a database of [Tagalog](http://tagaloglang.com/) words powered by Cyberspace.ph Web Hosting. This script uses a common web scraping technique known as HTML parsing.
 
-**42,721 words (as of Feb 19, 2023)**
+**[42,723 words (as of Feb 19, 2023)](https://github.com/raymelon/tagalog-dictionary-scraper/blob/master/tagalog_dict.txt)**
 
 ![](https://reposs.herokuapp.com/?path=raymelon/tagalog-dictionary-scraper)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
