@@ -6,7 +6,7 @@ Collects [Tagalog](http://tagaloglang.com/) words from [tagalog.pinoydictionary.
 
 ## 42,723 words (as of Feb 19, 2023)
 
-**[See the word list at `tagalog_dict.txt`](https://github.com/raymelon/tagalog-dictionary-scraper/blob/master/tagalog_dict.txt)**
+<a href="https://github.com/raymelon/tagalog-dictionary-scraper/blob/master/tagalog_dict.txt" target="_blank">**See the word list at `tagalog_dict.txt`**</a>
 
 ![](https://reposs.herokuapp.com/?path=raymelon/tagalog-dictionary-scraper)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
