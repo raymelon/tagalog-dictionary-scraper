@@ -15,6 +15,25 @@ Collects [Tagalog](http://tagaloglang.com/) words from [tagalog.pinoydictionary.
 
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)]()
 
+## Experimental API Server
+
+Served through GitHub Pages, the scraped words are accessible via HTML endpoint.
+
+**Host**
+
+[https://raymelon.github.io/tagalog-dictionary-scraper/](https://raymelon.github.io/tagalog-dictionary-scraper/)
+
+**Method**
+
+GET
+
+**URL Parameters**
+
+| Parameter | Valid Values         | Default Value | Example                                                                                                                                                |
+| --------- | -------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `as`      | `raw`, `csv`, `json` | `json`        | [https://raymelon.github.io/tagalog-dictionary-scraper/?as=csv](https://raymelon.github.io/tagalog-dictionary-scraper/?as=csv)                         |
+| `lineNo`  | `true`, `false`      | `false`       | [https://raymelon.github.io/tagalog-dictionary-scraper/?as=csv?lineNo=true](https://raymelon.github.io/tagalog-dictionary-scraper/?as=csv?lineNo=true) |
+
 ## How is it done? :muscle:
 
 Each webpage is loaded and parsed, extracting the words enclosed in `<h2 class='word-entry'>` tag.
