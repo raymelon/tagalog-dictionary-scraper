@@ -15,9 +15,9 @@ Collects [Tagalog](http://tagaloglang.com/) words from [tagalog.pinoydictionary.
 
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)]()
 
-## Experimental API Server
+## API Resource
 
-Served through GitHub Pages, the scraped words are accessible via HTML endpoint.
+Served through GitHub Pages, the scraped words are accessible via REST resource.
 
 **Host**
 
@@ -27,12 +27,15 @@ Served through GitHub Pages, the scraped words are accessible via HTML endpoint.
 
 GET
 
-**URL Parameters**
+**Resources Available**
 
-| Parameter | Valid Values         | Default Value | Example                                                                                                                                                |
-| --------- | -------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `as`      | `raw`, `csv`, `json` | `json`        | [https://raymelon.github.io/tagalog-dictionary-scraper/?as=csv](https://raymelon.github.io/tagalog-dictionary-scraper/?as=csv)                         |
-| `lineNo`  | `true`, `false`      | `false`       | [https://raymelon.github.io/tagalog-dictionary-scraper/?as=csv?lineNo=true](https://raymelon.github.io/tagalog-dictionary-scraper/?as=csv?lineNo=true) |
+| Resource | Display      | Endpoint                                                                                                  |
+| -------- | ------------ | --------------------------------------------------------------------------------------------------------- |
+| `csv`    | `default`    | [/tagalog_dict.csv](https://raymelon.github.io/tagalog-dictionary-scraper/tagalog_dict.csv)               |
+| `csv`    | `with lines` | [/tagalog_dict_lines.csv](https://raymelon.github.io/tagalog-dictionary-scraper/tagalog_dict_lines.csv)   |
+| `json`   | `default`    | [/tagalog_dict.json](https://raymelon.github.io/tagalog-dictionary-scraper/tagalog_dict.json)             |
+| `json`   | `with lines` | [/tagalog_dict_lines.json](https://raymelon.github.io/tagalog-dictionary-scraper/tagalog_dict_lines.json) |
+| `txt`    | `default`    | [/tagalog_dict.txt](https://raymelon.github.io/tagalog-dictionary-scraper/tagalog_dict.txt)               |
 
 ## How is it done? :muscle:
 
