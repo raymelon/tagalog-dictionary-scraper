@@ -65,8 +65,8 @@ while True:
 
 	try:
 
-		# once the letter_index reaches 25 (Ñ and NG excluded), the alphabet traversal is done
-		if letter_index >= 25:
+		# once the letter_index exceeds 25 (Ñ and NG excluded), the alphabet traversal is done
+		if letter_index > 25:
 			raise Exception('All valid URLs traversed.')
 
 		url = 'http://tagalog.pinoydictionary.com/list/' + letters[letter_index] + '/' + str(page_index) + '/'
