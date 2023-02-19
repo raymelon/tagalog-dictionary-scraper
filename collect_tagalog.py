@@ -63,131 +63,118 @@ all_words = []
 # page fetching
 while True:
 
-	try:
+  try:
 
-		# once the letter_index exceeds 25 (Ñ and NG excluded), the alphabet traversal is done
-		if letter_index > 25:
-			raise Exception('All valid URLs traversed.')
+    # once the letter_index exceeds 25 (Ñ and NG excluded), the alphabet traversal is done
+    if letter_index > 25:
+      raise Exception('All valid URLs traversed.')
 
-		url = 'http://tagalog.pinoydictionary.com/list/' + letters[letter_index] + '/' + str(page_index) + '/'
-						
-		print('Fetching from', url) # prints url for output display
+    url = 'http://tagalog.pinoydictionary.com/list/' + letters[letter_index] + '/' + str(page_index) + '/'
+            
+    print('Fetching from', url) # prints url for output display
 
-		# tries opening the page
-		req = session.get(url)
+    # tries opening the page
+    req = session.get(url)
 
-		if page_index == 1:
-			res = req.result()
+    if page_index == 1:
+      res = req.result()
 
-			if res.status_code == 200:
-				print('Success. Response is', res.status_code)
-				html = res.content
+      if res.status_code == 200:
+        print('Success. Response is', res.status_code)
+        html = res.content
 
-				# find the last page for the current letter
-				raw = BeautifulSoup(html, 'html.parser')
+        # find the last page for the current letter
+        raw = BeautifulSoup(html, 'html.parser')
 
-				# expected raw.find()['href'] return: http://tagalog.pinoydictionary.com/list/a/88/
-				# expected last_page_number: 88
-				last_page_element = raw.find('a', title='Last Page')
-				
-				if last_page_element:
-					last_page_number = int(list(filter(str.strip, last_page_element['href'].split('/')))[-1])
-				else:
-					last_page_number = 1
+        # examples:
+        # expected raw.find()['href'] return: http://tagalog.pinoydictionary.com/list/a/88/
+        # expected last_page_number: 88
+        last_page_element = raw.find('a', title='Last Page')
+        
+        if last_page_element:
+          last_page_number = int(list(filter(str.strip, last_page_element['href'].split('/')))[-1])
+        else:
+          last_page_number = 1
 
-			else:
-				raise MoverException('Failed. Response is', res.status_code)
+      else:
+        raise MoverException('Failed. Response is', res.status_code)
 
-		elif page_index < 1:
-			raise MoverException('Failed. Invalid page_index value:', page_index)
+    elif page_index < 1:
+      raise MoverException('Failed. Invalid page_index value:', page_index)
 
-		else:
-			if page_index > last_page_number:
-				raise MoverException('Last index reached for letter_index:', letter_index)
+    else:
+      if page_index > last_page_number:
+        raise MoverException('Last index reached for letter_index:', letter_index)
 
 
-		# check response later
-		worker_pool.append((url, req))
+    # check response later
+    worker_pool.append((url, req))
 
-	except MoverException as me:
+  except MoverException as me:
 
-		print(me)
+    print(me)
 
-		# the trick here is when the page doesn't exist, 
-		#   we need to go to the next letter page already
-		letter_index += 1
-					
-		# new letter means new page index
-		page_index = 1
-		continue
+    # the trick here is when the page doesn't exist, 
+    #   we need to go to the next letter page already
+    letter_index += 1
+          
+    # new letter means new page index
+    page_index = 1
+    continue
 
-	except Exception as e:
+  except Exception as e:
 
-		print(e)
-		break
-			
-	# parses the page opened
-	# raw = BeautifulSoup(html, 'html.parser')
-			
-	#    		# each word is enclosed in <h2> tags, 
-	#     	#   therefore it is the only tag we need
-	# words = raw.findAll('h2', class_='word-entry')
-			
-	# for word in words:
-	#         		# only gets words up to 8 characters length and...
-	# 	if len(word.next.next) < 9:
-	#             		# ...containing alphabet characters only
-	# 		print(re.compile('[^a-zA-Z]').sub('', word.next.next), file=f)
-			
-	# go to next page index
-	page_index += 1
+    print(e)
+    break
+  # go to next page index
+  page_index += 1
 
 print('Checking', len(worker_pool), 'page workers...')
 
 for worker in worker_pool:
 
-	try:
+  try:
 
-		(url, req) = worker
+    (url, req) = worker
 
-		res = req.result()
+    res = req.result()
 
-		if res.status_code == 200:
-			print('Check completion of page worker for request at', url, '- Success. Response is', res.status_code, '- Extracting words...')
-		else:
-			raise MoverException('Check completion of page worker for request at', url, ': Failed. Response is', res.status_code)
+    if res.status_code == 200:
+      print('Check completion of page worker for request at', url, '- Success. Response is', res.status_code, '- Extracting words...')
+    else:
+      raise MoverException('Check completion of page worker for request at', url, ': Failed. Response is', res.status_code)
 
-		html = res.content
+    html = res.content
 
-		# parses the page opened
-		raw = BeautifulSoup(html, 'html.parser')
-				
-		# each word is enclosed in <h2> tags, 
-		#   therefore it is the only tag we need
-		words = raw.findAll('h2', class_='word-entry')
-				
-		for word in words:
-			# only gets words up to 15 characters length and...
-			if len(word.next.next) < 15:
-				# ...containing alphabet characters only
-				# print(re.compile('[^a-zA-Z]').sub('', word.next.next), file=f)
-				all_words.append(re.compile('[^a-zA-Z]').sub('', word.next.next))
+    # parses the page opened
+    raw = BeautifulSoup(html, 'html.parser')
+        
+    # each word is enclosed in <h2> tags, 
+    #   therefore it is the only tag we need
+    words = raw.findAll('h2', class_='word-entry')
+        
+    for word in words:
+      # only gets words up to 15 characters length and...
+      if len(word.next.next) < 15:
+        # ...containing alphabet characters only
+        # print(re.compile('[^a-zA-Z]').sub('', word.next.next), file=f)
+        all_words.append(re.compile('[^a-zA-Z]').sub('', word.next.next))
 
-	except MoverException:
+  except MoverException:
 
-		print(me)
-		continue
+    print(me)
+    continue
 
-	except Exception:
+  except Exception:
 
-		print(e)
-		break
+    print(e)
+    break
 
 
 with open('tagalog_dict.txt', 'w') as f:
-	# writing to file
-	for word in all_words:
-		print(word, file=f)
+  # writing to file
+  for word in all_words:
+    print(word, file=f)
 
 
 print('Writing finished. See the extracted words at "tagalog_dict.txt"')
