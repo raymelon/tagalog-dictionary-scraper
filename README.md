@@ -4,7 +4,9 @@
 
 Collects [Tagalog](http://tagaloglang.com/) words from [tagalog.pinoydictionary.com](http://tagalog.pinoydictionary.com/), a database of [Tagalog](http://tagaloglang.com/) words powered by Cyberspace.ph Web Hosting. This script uses a common web scraping technique known as HTML parsing.
 
-**[42,723 words (as of Feb 19, 2023)](https://github.com/raymelon/tagalog-dictionary-scraper/blob/master/tagalog_dict.txt)**
+## 42,723 words (as of Feb 19, 2023)
+
+**[See the word list at `tagalog_dict.txt`](https://github.com/raymelon/tagalog-dictionary-scraper/blob/master/tagalog_dict.txt)**
 
 ![](https://reposs.herokuapp.com/?path=raymelon/tagalog-dictionary-scraper)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
@@ -46,7 +48,7 @@ The main purpose of this project is for a [Scrabble ®](http://www.scrabble.com/
 
 - Run the scraper script [`collect_tagalog.py`](https://github.com/raymelon/tagalog-dictionary-scraper/blob/master/collect_tagalog.py)
 - See the output of collected words at [`tagalog_dict.txt`](https://github.com/raymelon/tagalog-dictionary-scraper/blob/master/tagalog_dict.txt)
-- Match [`max_workers`](https://github.com/raymelon/tagalog-dictionary-scraper/blob/master/collect_tagalog.py#L57) value with the CPU and network capacity of the environment. See the [comment](https://github.com/raymelon/tagalog-dictionary-scraper/blob/master/collect_tagalog.py#L41) for estimated values and expected download rates.
+- Match [`max_workers`](https://github.com/raymelon/tagalog-dictionary-scraper/blob/master/collect_tagalog.py#L57) value with the CPU and network capacity of the environment. See the [comment](https://github.com/raymelon/tagalog-dictionary-scraper/blob/master/collect_tagalog.py#L41-L56) for estimated values and expected download rates.
 
 ## License [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
